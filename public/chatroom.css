@@ -14,9 +14,10 @@ body { font: 13px Helvetica, Arial; }
     overflow: auto;
     margin: 0;
     margin-right: 20%;
-    max-height: 90vh;
+    max-height: 85vh;
 }
 #stuff {
+    font-size: 1em;
     position: fixed;
     bottom: 10%;
     right: 0;
@@ -25,10 +26,32 @@ body { font: 13px Helvetica, Arial; }
     border: 2px solid #333333;
     border-bottom: none;
     border-top: none;
+    padding: 2em;
 }
-#stuff #nickchanger {
-    margin: 2em;
+
+#stuff #nickchanger button{
+    font-size: .8em;
+    margin-bottom: 10%;
+}
+#stuff #online {
+    list-style-type: none;
+}
+#stuff #nickchanger #n {
+    width: 100%;
 }
 #stuff #nickchanger button {
     margin-top: .5em;
+}
+
+#typingdiv {
+    position: fixed;
+    bottom: 10%;
+    padding: 10px;
+    height: 5vh;
+    width: 80%;
+    font-size: .75em;
+}
+
+#typingdiv #typing {
+    padding-bottom: .5em;
 }
