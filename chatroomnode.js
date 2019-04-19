@@ -14,7 +14,7 @@ let typings = [];
 let messages = [];
 
 app.use(express.static(__dirname + '/public'));
-app.use(favicon(path.join(__dirname, 'public', 'favicon.ico')));
+app.use(favicon(path.join(__dirname, 'favicon.ico')));
 
 app.get('/', function(req, res){
     res.sendFile(__dirname + '/chatroom.html');
