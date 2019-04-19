@@ -2,7 +2,9 @@ var express = require('express');
 var app = express();
 var http = require('http').Server(app);
 var io = require('socket.io')(http);
-var path = require('path')
+var favicon = require('serve-favicon');
+var path = require('path');
+
 
 let nicks = {
 
@@ -12,7 +14,7 @@ let typings = [];
 let messages = [];
 
 app.use(express.static(__dirname + '/public'));
-app.use(express.favicon(__dirname + '/public/favicon.ico'));
+app.use(favicon(path.join(__dirname, 'public', 'favicon.ico')));
 
 app.get('/', function(req, res){
     res.sendFile(__dirname + '/chatroom.html');
